@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "1658879f-7e1e-41b9-86ec-dd4abd532740",
+		"name": "crud-api-express-mongo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "{{host}}/contact",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\": \"Bros\",\n\t\"lastName\": \"Cuk\",\n\t\"email\": \"bros@gmail.com\",\n\t\"phone\": \"08320183\",\n\t\"company\": \"CODE ID\"\n}"
+				},
+				"url": {
+					"raw": "{{host}}/contact",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"contact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{host}}/contact",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}/contact",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"contact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{host}}/contact/:id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}/contact/5c9dc7c26056991fc08281e3",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"contact",
+						"5c9dc7c26056991fc08281e3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{host}}/contact/:id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "firstName",
+							"value": "Tams2",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "Nguyen",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "tams@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "08308201",
+							"type": "text"
+						},
+						{
+							"key": "company",
+							"value": "CodeID",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/contact/5c9dc7c26056991fc08281e3",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"contact",
+						"5c9dc7c26056991fc08281e3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{host}}/contact/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}/contact/5c9dc7c26056991fc08281e3",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"contact",
+						"5c9dc7c26056991fc08281e3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
